@@ -23,6 +23,11 @@ public class CustomerController {
     public String sayHelli(){
         return "Hello Good Afternoon...!";
     }
+	
+	@GetMapping("/saySomthing")
+    public String saySomthing(){
+        return "Hello How Are you...?";
+    }
 
     @GetMapping("/customers")
     public List<CustomerDTO> getCustomers() {
